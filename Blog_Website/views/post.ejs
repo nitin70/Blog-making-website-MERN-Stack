@@ -1,0 +1,12 @@
+<%- include("./partials/header") -%>
+<h1><%=pageHeading%></h1>
+<p><%=pageTitle%></p><br>
+<div class="management">
+    <form action="/update" method="post">
+        <input type="hidden" name="pagename" value="<%=pageId%>"></input>
+        <button type="submit" value="button1" name="button1" class="btn btn1 btn-light">Edit</button>       
+        <button type="submit" value="button2" name="button2" class="btn btn2 btn-dark">Delete</button>
+    </form>
+</div>
+
+<%- include("./partials/footer") -%> 

@@ -1,0 +1,9 @@
+<%- include("./partials/header") -%>
+<h1><%=pageTitle%></h1>
+<form class="" action="/edit" method="post">
+    <textarea name="postbody" cols="150" rows="21"><%=pageMaterial%></textarea><br>
+    <input type="hidden" name="pageid" value="<%=pageid%>"></input>
+    <input type="hidden" name="pagetitle" value="<%=pageTitle%>"></input>
+    <button class="btn" type="submit" name="editsubmitbutton" value="Update">Submit</button>
+  </form>
+<%- include("./partials/footer") -%> 
